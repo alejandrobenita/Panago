@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import NextImage from "next/image";
 import { InitiativeInfoPanel } from "@/components/InitiativeInfoPanel";
 import type { StrategicInitiative } from "@/data/strategicInitiatives";
+import { publicUrl } from "@/lib/publicUrl";
 
 /** Alternate purple and gray only */
 const PROJECT_SECTION_BG: readonly string[] = [
@@ -53,7 +54,7 @@ export function InitiativeSection({
               }`}
             >
               <NextImage
-                src={initiative.imageSrc}
+                src={publicUrl(initiative.imageSrc)}
                 alt={initiative.imageAlt}
                 fill
                 className="object-cover object-center"

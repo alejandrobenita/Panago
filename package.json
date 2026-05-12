@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
+    "build:static": "NEXT_STATIC_EXPORT=true BASE_PATH=/Panago NEXT_PUBLIC_BASE_PATH=/Panago next build",
     "start": "next start -p 3001",
     "lint": "next lint"
   },

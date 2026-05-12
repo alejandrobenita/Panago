@@ -8,18 +8,19 @@ import {
 } from "framer-motion";
 import NextImage from "next/image";
 import { useRef } from "react";
+import { publicUrl } from "@/lib/publicUrl";
 
 const HERO_IMAGES = [
   {
-    src: "/heroes/hero-pizza.png",
+    src: publicUrl("/heroes/hero-pizza.png"),
     alt: "Dynamic pizza with toppings in motion — brand energy",
   },
   {
-    src: "/heroes/hero-salad.png",
+    src: publicUrl("/heroes/hero-salad.png"),
     alt: "Fresh salad ingredients suspended — quality and lightness",
   },
   {
-    src: "/heroes/hero-dessert.png",
+    src: publicUrl("/heroes/hero-dessert.png"),
     alt: "Layered dessert deconstructed in motion — craft and detail",
   },
 ] as const;

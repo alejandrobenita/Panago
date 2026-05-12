@@ -4,6 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import NextImage from "next/image";
 import { useEffect, useId, useState } from "react";
 import { STRATEGIC_NAV } from "@/data/strategicInitiatives";
+import { publicUrl } from "@/lib/publicUrl";
 
 export function SiteHeader() {
   const reduce = useReducedMotion();
@@ -33,7 +34,7 @@ export function SiteHeader() {
           aria-label="PANAGO — back to top"
         >
           <NextImage
-            src="/panago-logo.png"
+            src={publicUrl("/panago-logo.png")}
             alt="PANAGO"
             width={248}
             height={64}
